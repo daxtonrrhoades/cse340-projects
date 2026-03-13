@@ -44,22 +44,22 @@ header {
   font-size: 3rem;
   font-family: var(--heading-font);
   cursor: pointer;
+}
 
-  & a {
+.siteName a {
     color: black;
     text-decoration: none;
-  }
 }
 
 #tools {
   font-size: 1rem;
   font-family: var(--heading-font);
   cursor: pointer;
+}
 
-  & a {
-    color: black;
-    text-decoration: none;
-  }
+#tools a {
+  color: black;
+  text-decoration: none;
 }
 
 /******* NAVIGATION ***************/
@@ -67,19 +67,19 @@ nav {
   background-color: var(--primary-color);
   display: flex;
   justify-content: space-around;
+}
 
-  & ul {
-    display: flex;
-  }
+nav ul {
+  display: flex;
+}
 
-  & li {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    font-size: 0.5rem;
-    font-family: var(--heading-font);
-    padding: 0.75rem;
-  }
+nav li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 0.5rem;
+  font-family: var(--heading-font);
+  padding: 0.75rem;
 }
 
 /******* MAIN ***************/
@@ -87,12 +87,12 @@ nav {
 .hero {
   margin-left: 2rem;
   display: flex;
+}
 
-  & img {
-    width: 95%;
-    height: auto;
-    align-self: center;
-  }
+.hero img {
+  width: 95%;
+  height: auto;
+  align-self: center;
 }
 
 .hero-info {
@@ -102,16 +102,16 @@ nav {
   font-size: 0.6rem;
   max-width: 150px;
   height: auto;
+}
 
-  & h2, h3 {
-    color: black;
-  }
+.hero-info h2, h3 {
+  color: black;
+}
 
-  & a {
-    padding: 0.35rem;
-    cursor: pointer;
-    text-decoration: none;
-  }
+.hero-info a {
+  padding: 0.35rem;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* main content */
@@ -125,34 +125,36 @@ nav {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   text-wrap: nowrap;
-
-  & h2 {
-    grid-column: 1/-1;
-    grid-row: 1;
-  }
-
-  & figure {
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 1rem;
-    max-width: 150px;
-
-    & a {
-      color: black;
-    }
-  }
 }
+
+.upgrades h2 {
+  grid-column: 1/-1;
+  grid-row: 1;
+}
+
+.upgrades figure {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 1rem;
+  max-width: 150px;
+}
+
+.upgrades a {
+  color: black;
+}
+
 
 .reviews ul {
   display: flex;
   flex-direction: column;
-  
-  & li {
-    font-family: var(--main-font);
-    color: black;
-    font-size: 1.2rem;
-  }
 }
+
+.reviews ul li {
+  font-family: var(--main-font);
+  color: black;
+  font-size: 1.2rem;
+}
+
 /******* FOOTER ***************/
 footer {
   color: black;
@@ -172,11 +174,9 @@ footer {
   }
 
   /******* NAVIGATION ***************/
-  nav {
-    & li {
-      font-size: 1.75rem;
-    }
-  }
+nav li {
+  font-size: 1.75rem;
+}
 
   /******* MAIN ***************/
   /* hero */
